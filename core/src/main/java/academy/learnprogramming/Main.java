@@ -28,6 +28,9 @@ public class Main {
         //log generator number
         log.info("number  = {}", number);
 
+        //get game bean from context (container)
+        Game game = context.getBean(Game.class);
+
         //close contex (container)
         context.close();
 
